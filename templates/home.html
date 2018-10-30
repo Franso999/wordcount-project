@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>This is my file</title>
+</head>
+<body>
+<h1>This is the heading</h1>
+This is the text from the body section
+<form action="{% url 'count' %}">
+    <textarea cols="40" rows="5" name="fulltext"></textarea>
+    <br/>
+    <input type="submit" value="Count"/>
+
+</form>
+<form method="get" action="{% url 'about' %}">
+<input type="submit" value="About"/>
+</form>
+</body>
+</html>
